@@ -42,3 +42,5 @@ Route::post('/register', [App\Http\Controllers\RegisterController::class, 'store
 Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])
     ->middleware('auth')
     ->name('logout');
+
+Route::resource('/blog', 'BlogController');
