@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <div class="h-64">
-    <div class="container mx-auto">
-      <form class="form-signin" method="post" action="/login">
+  <div class="flex justify-center min-h-screen bg-flower ">
+    <div class="mt-8">
+      <form class="form-signin" method="post" action="/login ">
         @csrf
-        <h1 class="mb-3 font-weight-normal text-red-600">ログイン</h1>
+        <h1 class="mb-3 font-weight-normal font-semibold text-lg border-b-2 border-gray-600">ログイン</h1>
           @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
